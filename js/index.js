@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var mainReviews = JSON.parse(localStorage.getItem("myReviews"));
+    var mainReviews = JSON.parse(localStorage.getItem("mainReviews"));
     
     if (mainReviews === null){
         mainReviews = [];
