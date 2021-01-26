@@ -22,14 +22,14 @@ $(document).ready(function(){
                 $("#contents").append(message);
                 $("#poster").html("<img src='" + response.Poster + "'/>");
                 
-                var myReviews = JSON.parse(localStorage.getItem("myReviews"));
+                var mainReviews = JSON.parse(localStorage.getItem("mainReviews"));
                 
-                if(myReviews === null){
-                    myReviews=[];
+                if(mainReviews === null){
+                    mainReviews=[];
                 }
-                myReviews[myReviews.length] = response;
+                mainReviews[mainReviews.length] = response;
                 
-                localStorage.setItem("myReviews", JSON.stringify(myReviews));
+                localStorage.setItem("mainReviews", JSON.stringify(mainReviews));
                
             }
         });
